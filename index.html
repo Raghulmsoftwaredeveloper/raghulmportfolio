@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Solar System Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .planet:hover::after {
+      content: attr(data-title);
+      position: absolute;
+      top: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.8);
+      color: #000;
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 4px;
+      white-space: nowrap;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Solar System -->
+  <div class="solar-system">
+    <div class="sun">☀️</div>
+
+    <div class="orbit mercury">
+      <div class="planet mercury-planet" data-link="home.html" data-title="Home"></div>
+    </div>
+
+    <div class="orbit venus">
+      <div class="planet venus-planet" data-link="about.html" data-title="About"></div>
+    </div>
+
+    <div class="orbit earth">
+      <div class="planet earth-planet" data-link="contact.html" data-title="Contact"></div>
+    </div>
+
+    <div class="orbit mars">
+      <div class="planet mars-planet" data-link="projects.html" data-title="Projects"></div>
+    </div>
+
+    <div class="orbit jupiter">
+      <div class="planet jupiter-planet" data-link="experience.html" data-title="Experience"></div>
+    </div>
+
+    <div class="orbit saturn">
+      <div class="planet saturn-planet" data-link="resume.html" data-title="Resume"></div>
+    </div>
+
+    <div class="orbit uranus">
+      <div class="planet uranus-planet" data-link="photos.html" data-title="Photos"></div>
+    </div>
+
+    <div class="orbit neptune">
+      <div class="planet neptune-planet" data-link="reviews.html" data-title="Reviews"></div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.planet').forEach(planet => {
+      planet.addEventListener('click', () => {
+        const link = planet.getAttribute('data-link');
+        if (link) window.open(link, '_blank');
+      });
+    });
+  </script>
+
+</body>
+</html>

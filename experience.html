@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experience | Raghul M</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Background Animation */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('images/jupiter.webp') no-repeat center center;
+      background-size: cover;
+      z-index: -1;
+      animation: moveStars 240s linear infinite;
+    }
+
+    @keyframes moveStars {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-100px, -50px); }
+    }
+
+    /* Page Container */
+    .container {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #0ff;
+      text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+      margin-bottom: 40px;
+    }
+
+    /* Experience Card */
+    .experience-card {
+      background: rgba(0, 0, 0, 0.6);
+      border-left: 4px solid #0ff;
+      padding: 24px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+      text-align: left;
+    }
+
+    .experience-card h2 {
+      font-size: 1.8rem;
+      color: #0ff;
+      margin-bottom: 8px;
+    }
+
+    .experience-card p,
+    .experience-card li {
+      color: #ccc;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 6px;
+    }
+
+    .experience-card ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    /* Navigation Button */
+    .nav {
+      margin-top: 40px;
+    }
+
+    .nav a {
+      color: #0ff;
+      text-decoration: none;
+      border: 2px solid #0ff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .nav a:hover {
+      background-color: #0ff;
+      color: black;
+      box-shadow: 0 0 15px #0ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 My Experience</h1>
+
+    <section class="experience-card">
+      <h2>Naan Mudhalvan</h2>
+      <p><strong>Role:</strong> Technical Software Trainer (Freelance)</p>
+      <p><strong>Duration:</strong> March 2025</p>
+      <p><strong>Location:</strong> Krishnagiri, Tamil Nadu, India (On-site)</p>
+      <ul>
+        <li>Delivering freelance training on Mobile Application(Dart, Flutter).</li>
+        <li>Assisting local students with real-time coding and skill development.</li>
+        <li>Creating practical exercises for hands-on understanding.</li>
+      </ul>
+    </section>
+
+    <section class="experience-card">
+      <h2>Indian Institute of Embedded Systems</h2>
+      <p><strong>Role:</strong> Technical Software Trainer</p>
+      <p><strong>Duration:</strong> Feb 2024 – Feb 2025</p>
+      <p><strong>Location:</strong> Bangalore, India</p>
+      <ul>
+        <li>Deliver training sessions on C programming, Python, and Data Structures.</li>
+        <li>Designed and developed course material with projects and assignments.</li>
+        <li>Provided personalized support and assessment feedback.</li>
+      </ul>
+    </section>
+
+    <section class="experience-card">
+      <h2>Renova Computer Education</h2>
+      <p><strong>Role:</strong> Software Developer and Trainer</p>
+      <p><strong>Duration:</strong> June 2020 – Sep 2023</p>
+      <p><strong>Location:</strong> Hosur, India</p>
+      <ul>
+        <li>Conducted C, C++, and MS Office training for students.</li>
+        <li>Developed study materials and interactive sessions.</li>
+        <li>Mentored students on project-based learning.</li>
+      </ul>
+    </section>
+
+    
+
+    <div class="nav">
+      <a href="home.html">← Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
