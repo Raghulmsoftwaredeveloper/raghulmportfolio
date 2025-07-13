@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills – Raghul M</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: black;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: url('images/space.jpg') no-repeat center center/cover;
+      opacity: 0.08;
+      z-index: -2;
+    }
+
+    h1.title {
+      text-align: center;
+      font-size: 3rem;
+      padding: 2rem 0 1rem;
+      color: black; /* changed from #0ff */
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+      z-index: 10;
+      position: relative;
+      background-color: #0ff;
+      border-radius: 10px;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 10px 20px;
+    }
+
+.star-skill {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url('images/uranus.png') no-repeat center center;
+  background-size: cover;
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 40px 10px 10px;
+  white-space: nowrap;
+  animation: float 8s linear infinite;
+  z-index: 1;
+  color: black;
+  font-weight: bold;
+}
+
+
+    .star-skill a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+    }
+
+    .star-skill:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    /* Star Positions + Unique Animations */
+    .star-skill:nth-child(2)  { top: 20%; left: 10%;  animation: float1 5s infinite; }
+    .star-skill:nth-child(3)  { top: 30%; left: 40%;  animation: float2 6s infinite; }
+    .star-skill:nth-child(4)  { top: 35%; left: 70%;  animation: float3 5.5s infinite; }
+    .star-skill:nth-child(5)  { top: 50%; left: 20%;  animation: float4 6.5s infinite; }
+    .star-skill:nth-child(6)  { top: 65%; left: 50%;  animation: float5 6s infinite; }
+    .star-skill:nth-child(7)  { top: 40%; left: 80%;  animation: float6 5s infinite; }
+    .star-skill:nth-child(8)  { top: 15%; left: 60%;  animation: float7 5.5s infinite; }
+    .star-skill:nth-child(9)  { top: 55%; left: 30%;  animation: float8 6s infinite; }
+    .star-skill:nth-child(10) { top: 70%; left: 70%;  animation: float9 5s infinite; }
+    .star-skill:nth-child(11) { top: 80%; left: 15%;  animation: float10 6.5s infinite; }
+    .star-skill:nth-child(12) { top: 85%; left: 85%;  animation: float2 6s infinite; }
+
+    @keyframes float1  { 0% { transform: translate(0, 0); } 50% { transform: translate(20px, -30px); } 100% { transform: translate(0, 0); } }
+    @keyframes float2  { 0% { transform: translate(0, 0); } 50% { transform: translate(-25px, 25px); } 100% { transform: translate(0, 0); } }
+    @keyframes float3  { 0% { transform: translate(0, 0); } 50% { transform: translate(20px, 20px); } 100% { transform: translate(0, 0); } }
+    @keyframes float4  { 0% { transform: translate(0, 0); } 50% { transform: translate(-20px, -30px); } 100% { transform: translate(0, 0); } }
+    @keyframes float5  { 0% { transform: translate(0, 0); } 50% { transform: translate(40px, -10px); } 100% { transform: translate(0, 0); } }
+    @keyframes float6  { 0% { transform: translate(0, 0); } 50% { transform: translate(-35px, 25px); } 100% { transform: translate(0, 0); } }
+    @keyframes float7  { 0% { transform: translate(0, 0); } 50% { transform: translate(10px, 35px); } 100% { transform: translate(0, 0); } }
+    @keyframes float8  { 0% { transform: translate(0, 0); } 50% { transform: translate(-10px, -20px); } 100% { transform: translate(0, 0); } }
+    @keyframes float9  { 0% { transform: translate(0, 0); } 50% { transform: translate(15px, -35px); } 100% { transform: translate(0, 0); } }
+    @keyframes float10 { 0% { transform: translate(0, 0); } 50% { transform: translate(-20px, 10px); } 100% { transform: translate(0, 0); } }
+  </style>
+</head>
+<body>
+  <h1 class="title">🚀 My Skills Universe</h1>
+
+  <div class="star-skill">C</div>
+  <div class="star-skill">Python</div>
+  <div class="star-skill">HTML</div>
+  <div class="star-skill">CSS</div>
+  <div class="star-skill">Dart</div>
+  <div class="star-skill">Flutter</div>
+  <div class="star-skill">Azure</div>
+  <div class="star-skill">DSA</div>
+  <div class="star-skill">GitHub</div>
+  <div class="star-skill">Ethical Hack</div>
+  <div class="star-skill"><a href="index.html">🔙 Solar <br>System</a></div>
+</body>
+</html>
